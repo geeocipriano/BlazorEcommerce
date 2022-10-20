@@ -821,3 +821,4 @@ C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcomm
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\refint\BlazorEcommerce.Client.dll
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\BlazorEcommerce.Client.pdb
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\ref\BlazorEcommerce.Client.dll
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductList.razor.rz.scp.css
