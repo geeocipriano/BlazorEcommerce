@@ -10,3 +10,5 @@ C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\obj\Debug\net6.0\BlazorEcomm
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\obj\Debug\net6.0\refint\BlazorEcommerce.Shared.dll
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\obj\Debug\net6.0\BlazorEcommerce.Shared.pdb
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\obj\Debug\net6.0\ref\BlazorEcommerce.Shared.dll
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\bin\Debug\net6.0\BlazorEcommerce.Shared.runtimeconfig.json
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Shared\obj\Debug\net6.0\BlazorEcommerce.Shared.genruntimeconfig.cache
