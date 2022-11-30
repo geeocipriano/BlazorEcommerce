@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lEPRkpW6bOFr805ysxN1wdObvKNLjMAg7D+FXZJ1rkc=",
+  "Hash": "yMugvYCJ/b3OIwQmP6CzH6drrIuG5+3Eb9QL5C5HlTc=",
   "Source": "BlazorEcommerce.Server",
   "BasePath": "_content/BlazorEcommerce.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "BlazorEcommerce.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -199,23 +199,6 @@
       "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\humanizer.core\\2.14.1\\lib\\net6.0\\Humanizer.dll"
     },
     {
-      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "BlazorEcommerce.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.8\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "BlazorEcommerce.Client",
       "SourceType": "Project",
@@ -265,6 +248,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.8\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.8\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -7356,6 +7356,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorEcommerce.Client",
       "SourceType": "Project",
@@ -7456,23 +7473,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "BlazorEcommerce.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
