@@ -870,3 +870,4 @@ C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\Fl
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\cqisSeC2.gz
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\Z5B1Bznw.gz
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\drTgi5na.gz
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\ProductDetails.razor.rz.scp.css

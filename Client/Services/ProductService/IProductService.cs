@@ -1,4 +1,5 @@
-﻿using BlazorEcommerce.Shared.Models;
+﻿using BlazorEcommerce.Shared;
+using BlazorEcommerce.Shared.Models;
 
 namespace BlazorEcommerce.Client.Services.ProductService
 {
@@ -7,5 +8,6 @@ namespace BlazorEcommerce.Client.Services.ProductService
         List<Product> Products { get; set; }
 
         Task GetProducts();
+        Task<ServiceResponse<Product>> GetProduct(int productId);
     }
 }
