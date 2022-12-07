@@ -7,7 +7,6 @@
         {
             _context = context;
         }
-
         public async Task<ServiceResponse<Product>> GetProductAsync(int productId)
         {
             var response = new ServiceResponse<Product>();
@@ -23,7 +22,6 @@
             }
             return response;
         }
-
         public async Task<ServiceResponse<List<Product>>> GetProductsAsync()
         {
             var response = new ServiceResponse<List<Product>>
@@ -32,7 +30,6 @@
             };
             return response;
         }
-
         public async Task<ServiceResponse<List<Product>>> GetProductsByCategory(string categoryUrl)
         {
             var response = new ServiceResponse<List<Product>>
@@ -40,6 +37,52 @@
                 Data = await _context.Products.Where(m => m.Category.Url.ToLower().Equals(categoryUrl.ToLower())).ToListAsync()
             };
             return response;
+        }
+        public async Task<ServiceResponse<List<Product>>> AddProductAsync(Product product)
+        {
+            var response = new ServiceResponse<List<Product>>();
+            try
+            {
+                _context.Products.Add(product);
+                await _context.SaveChangesAsync();
+                response = new ServiceResponse<List<Product>>
+                {
+                    Data = await _context.Products.ToListAsync()
+                };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            return response;
+        }
+
+        public async Task<ServiceResponse<List<Product>>> DeleteProductAsync(int productId)
+        {
+            var response = new ServiceResponse<List<Product>>();
+            try
+            {
+                var product = await _context.Products.FindAsync(productId);
+
+                if (product == null)
+                {
+                    response.Success = false;
+                    response.Message = "Sorry, but this not product does not exist.";
+                }
+                else
+                {
+                    _context.Products.Remove(product);
+                    await _context.SaveChangesAsync();
+                }
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
         }
     }
 }

@@ -33,5 +33,35 @@ namespace BlazorEcommerce.Server.Controllers
             var result = await _productService.GetProductsByCategory(categoryUrl);
             return Ok(result);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<List<Product>>> AddProduto(Product produto)
+        {
+            try
+            {
+                var result = await _productService.AddProductAsync(produto);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Product>>> DeleteProduto(int id)
+        {
+            try
+            {
+                var result = await _productService.DeleteProductAsync(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
     }
 }
