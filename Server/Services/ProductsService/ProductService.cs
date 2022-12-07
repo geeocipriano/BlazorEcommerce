@@ -1,6 +1,4 @@
-﻿using BlazorEcommerce.Shared.Models;
-
-namespace BlazorEcommerce.Server.Services.ProductsService
+﻿namespace BlazorEcommerce.Server.Services.ProductsService
 {
     public class ProductService : IProductService
     {
@@ -31,6 +29,15 @@ namespace BlazorEcommerce.Server.Services.ProductsService
             var response = new ServiceResponse<List<Product>>
             {
                 Data = await _context.Products.ToListAsync()
+            };
+            return response;
+        }
+
+        public async Task<ServiceResponse<List<Product>>> GetProductsByCategory(string categoryUrl)
+        {
+            var response = new ServiceResponse<List<Product>>
+            {
+                Data = await _context.Products.Where(m => m.Category.Url.ToLower().Equals(categoryUrl.ToLower())).ToListAsync()
             };
             return response;
         }
