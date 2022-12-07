@@ -33,5 +33,10 @@ namespace BlazorEcommerce.Client.Services.ProductService
             ProductsChanged.Invoke();
         }
 
+        public void AddProduct(Product produto)
+        {
+            _http.PostAsJsonAsync("api/product", produto);
+        }
+
     }
 }

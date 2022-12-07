@@ -1,0 +1,53 @@
+﻿@page "/addproduct"
+@inject IProductService ProductService
+
+<PageTitle>Counter</PageTitle>
+
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" @bind=produto.Title>
+</div>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Descrição</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea" @bind=produto.Description></textarea>
+</div>
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Imagem</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" @bind=produto.ImageUrl>
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" @bind=produto.Price>
+</div>
+<div class="input-group input-group-sm mb-3" >
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm" >Categoria</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" @bind=produto.CategoryId>
+</div>
+<button type="button" class="btn btn-primary" @onclick="SubmitProduct">Primary</button>
+
+@code {
+    private int currentCount = 0;
+    public string? Name;
+    public string? Desc { get; set; }
+    public string? Imagem { get; set; }
+    public decimal Price { get; set; }
+    public int CategoryId { get; set; }
+    Product produto = new Product{ Category = null  };
+
+
+    private void  SubmitProduct()
+    {
+        ProductService.AddProduct(produto);
+    }
+}
+
