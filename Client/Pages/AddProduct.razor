@@ -36,12 +36,6 @@
 <button type="button" class="btn btn-primary" @onclick="SubmitProduct">Primary</button>
 
 @code {
-    private int currentCount = 0;
-    public string? Name;
-    public string? Desc { get; set; }
-    public string? Imagem { get; set; }
-    public decimal Price { get; set; }
-    public int CategoryId { get; set; }
     Product produto = new Product{ Category = null  };
 
 

@@ -8,19 +8,29 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass" >
     <nav class="flex-column">
-        <div class="nav-item px-3">
+        <div class="nav-item px-3" @onclick="ToggleNavMenu">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+        <div class="nav-item px-3" @onclick="ToggleNavMenu">
             <NavLink class="nav-link" href="addproduct">
-                <span class="oi oi-home" aria-hidden="true"></span> Add Product
+                <span class="oi oi-plus" aria-hidden="true"></span> Add Product
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+@*        <div class="nav-item px-3" @onclick="ToggleNavMenu">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3" @onclick="ToggleNavMenu">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>*@
+        <div class="nav-item px-3 ">
             <NavLink class="nav-link" @onclick="()=>expandSubNav = !expandSubNav">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Categories
             </NavLink>
@@ -29,24 +39,15 @@
                 @foreach (var category in CategoryService.Categories)
                 {
                     <div class="nav-item px-3">
-                        <NavLink class="nav-link" href="@category.Url">
-                            @*<span class="oi oi-plus" aria-hidden="true"></span>*@ @category.Name
+                        <NavLink class="nav-link" href="@category.Url" @onclick="ToggleNavMenu">
+                            <span class="oi oi-tags" aria-hidden="true"></span> @category.Name
                         </NavLink>
                     </div>
                 }
             }
         </div>
 
-@*        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>*@
+
     </nav>
 </div>
 
@@ -59,6 +60,7 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+        expandSubNav = false;
     }
 
     protected override async Task OnInitializedAsync()

@@ -37,7 +37,9 @@ main[b-7v9fucczvh] {
 }
 
 .sidebar[b-7v9fucczvh] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    /*background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);*/
+    /*background-color: #04080F;*/
+    background-color: #262626;
 }
 
 .top-row[b-7v9fucczvh] {
@@ -150,15 +152,19 @@ main[b-7v9fucczvh] {
         line-height: 3rem;
     }
 
-.nav-item[b-d7qi8mznuc]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
+        .nav-item[b-d7qi8mznuc]  a.active {
+            /*background-color: rgba(255,255,255,0.25);*/
+            /*background-color: #507DBC;*/
+            background-color: #38AECC;
+            color: white;
+        }
 
-.nav-item[b-d7qi8mznuc]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
+        .nav-item[b-d7qi8mznuc]  a:hover {
+            /*background-color: rgba(255,255,255,0.1);*/
+            /*background-color: #507DBC;*/
+            background-color: #38AECC;
+            color: white;
+        }
 
 @media (min-width: 641px) {
     .navbar-toggler[b-d7qi8mznuc] {
