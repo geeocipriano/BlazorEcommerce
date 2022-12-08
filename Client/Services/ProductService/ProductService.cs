@@ -38,5 +38,9 @@ namespace BlazorEcommerce.Client.Services.ProductService
             _http.PostAsJsonAsync("api/product", produto);
         }
 
+        public void DeleteProduct(int productId)
+        {
+            _http.DeleteAsync($"api/product/{productId}");
+        }
     }
 }

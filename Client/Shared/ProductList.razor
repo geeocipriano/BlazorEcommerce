@@ -24,6 +24,7 @@ else{
                         $@product.Price
                     </h5>
                 </div>
+                <button type="button" class="btn btn-primary" @onclick="() => DeleteProduct(product.Id)">Primary</button>
             </li>
         }
     </ul>
@@ -38,5 +39,9 @@ else{
     public void Dispose()
     {
         ProductService.ProductsChanged -= StateHasChanged;
+    }
+    public void DeleteProduct(int productId)
+    {
+        ProductService.DeleteProduct(productId);
     }
 }
