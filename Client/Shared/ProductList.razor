@@ -1,4 +1,5 @@
 ﻿@inject IProductService ProductService
+@inject IToastService toastSevice
 @implements IDisposable
 
 @if(ProductService.Products == null || ProductService.Products.Count == 0)
@@ -91,8 +92,17 @@ else{
     {
         ProductService.ProductsChanged -= StateHasChanged;
     }
-    public void DeleteProduct(int productId)
+    public async Task DeleteProduct(int productId)
     {
-        ProductService.DeleteProduct(productId);
+        var res = await ProductService.DeleteProduct(productId);
+        if (res == "OK")
+        {
+            toastSevice.ShowSuccess("Produto Deletado com Sucesso!", "SUCESSO");
+            await ProductService.GetProducts();
+        }
+        else
+        {
+            toastSevice.ShowError("Falha ao Deletar Produto!", "ERRO");
+        }
     }
 }

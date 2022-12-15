@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gnLw/nRj7SdvHhriHYRHp8PmidM82s+L5jNDUtAaGdLDgPJNUZTfbNvLQxaZMr8zXbqIUQl3tmyRcq4iH1sQnA==",
+  "dgSpecHash": "RMAvE09ZZj8xRnyLtb7Nf0FvoPO5FzOxFmDpVoLQ36qunHQcmFlCjYIJiPP4tnXWsEaJwYis9wEAPbZ2CptQqw==",
   "success": true,
   "projectFilePath": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Server\\BlazorEcommerce.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\blazored.toast.3.2.2.nupkg.sha512",
     "C:\\Users\\Fartec\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Fartec\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\Fartec\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",

@@ -9,15 +9,24 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="BlazorEcommerce.Client.styles.css" rel="stylesheet" />
+    <link href="_content/Blazored.Toast/blazored-toast.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+        <div id="app" class="w-100 h-100" style="background-color: #cdd7d6 ">
+            <div class="vh-100 d-flex align-items-center justify-content-center bg-dark">
+                <div>
+                    <div class="spinner-border " role="status" style="width: 5rem; height: 5rem; color: hsla(4, 93%, 67%, 1)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div id="blazor-error-ui">
+    <div id="blazor-error-ui" class="bg-black" style="color: white">
         An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+        <a href="" class="reload" style="color: hsla(4, 93%, 67%, 1)">Reload</a>
+        <a class="dismiss" style="color: hsla(4, 93%, 67%, 1)">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

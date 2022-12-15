@@ -1,5 +1,6 @@
 ﻿@page "/addproduct"
 @inject IProductService ProductService
+@inject IToastService toastSevice
 
 <PageTitle>Counter</PageTitle>
 
@@ -34,14 +35,24 @@
     <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" @bind=produto.CategoryId>
 </div>
 <button type="button" class="btn btn-primary" @onclick="SubmitProduct">Primary</button>
+<button type="button" class="btn btn-primary" @onclick="@(() => toastSevice.ShowSuccess("Teste"))">Show</button>
+
+
 
 @code {
     Product produto = new Product{ Category = null  };
 
 
-    private void  SubmitProduct()
+    private async Task SubmitProduct()
     {
-        ProductService.AddProduct(produto);
+        var res = await ProductService.AddProduct(produto);
+
+        if(res == "OK"){
+            toastSevice.ShowSuccess("Produto Cadastrado com Sucesso!", "SUCESSO");
+        }
+        else{
+            toastSevice.ShowError("Falha ao Cadastrar Produto!", "ERRO");
+        }
     }
 }
 

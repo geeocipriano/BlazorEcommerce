@@ -33,14 +33,16 @@ namespace BlazorEcommerce.Client.Services.ProductService
             ProductsChanged.Invoke();
         }
 
-        public void AddProduct(Product produto)
+        public async Task<dynamic> AddProduct(Product produto)
         {
-            _http.PostAsJsonAsync("api/product", produto);
+            var response = await _http.PostAsJsonAsync("api/product", produto);
+            return response.StatusCode.ToString();
         }
 
-        public void DeleteProduct(int productId)
+        public async Task<dynamic> DeleteProduct(int productId)
         {
-            _http.DeleteAsync($"api/product/{productId}");
+            var response = await _http.DeleteAsync($"api/product/{productId}");
+            return response.StatusCode.ToString();
         }
     }
 }

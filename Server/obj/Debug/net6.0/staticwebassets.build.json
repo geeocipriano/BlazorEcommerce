@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lEPRkpW6bOFr805ysxN1wdObvKNLjMAg7D+FXZJ1rkc=",
+  "Hash": "52vSP8bPdRtf9VdOAbeOQxhc/USDO+98Q76GXpMuvk8=",
   "Source": "BlazorEcommerce.Server",
   "BasePath": "_content/BlazorEcommerce.Server",
   "Mode": "Default",
@@ -129,6 +129,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Shared\\bin\\Debug\\net6.0\\BlazorEcommerce.Shared.pdb"
+    },
+    {
+      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Toast.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\lib\\netstandard2.1\\Blazored.Toast.dll"
     },
     {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.8.cqyvs7sq88.js",
@@ -5061,6 +5078,23 @@
       "OriginalItemSpec": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
     },
     {
+      "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\H0QUmLBM.gz",
+      "SourceId": "BlazorEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Toast.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll"
+    },
+    {
       "Identity": "C:\\ProjetosP\\BlazorEcommerce\\BlazorEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\HaPibBBw.gz",
       "SourceId": "BlazorEcommerce.Client",
       "SourceType": "Project",
@@ -7558,6 +7592,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.css",
+      "SourceId": "Blazored.Toast",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Toast",
+      "RelativePath": "blazored-toast.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.css"
+    },
+    {
+      "Identity": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.min.css",
+      "SourceId": "Blazored.Toast",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Toast",
+      "RelativePath": "blazored-toast.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Fartec\\.nuget\\packages\\blazored.toast\\3.2.2\\staticwebassets\\blazored-toast.min.css"
     }
   ]
 }

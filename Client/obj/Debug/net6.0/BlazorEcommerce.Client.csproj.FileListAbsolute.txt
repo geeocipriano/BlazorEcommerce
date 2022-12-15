@@ -871,3 +871,7 @@ C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\cq
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\Z5B1Bznw.gz
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\drTgi5na.gz
 C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\ProductDetails.razor.rz.scp.css
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.Toast.dll
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.Toast.dll.gz
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\bin\Debug\net6.0\Blazored.Toast.dll
+C:\ProjetosP\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\build-gz\H0QUmLBM.gz
